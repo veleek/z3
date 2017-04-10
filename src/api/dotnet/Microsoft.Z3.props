@@ -1,0 +1,24 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Use64BitZ3Lib>false</Use64BitZ3Lib>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition="'$(Platform)' == 'x64' or $(Use64BitZ3Lib) == 'true'">
+      <ItemGroup>
+        <Reference Include="Microsoft.Z3">
+          <HintPath>$(MSBuildThisFileDirectory)lib\x64\Microsoft.Z3.dll</HintPath>
+          <Private>true</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.Z3">
+          <HintPath>$(MSBuildThisFileDirectory)lib\x86\Microsoft.Z3.dll</HintPath>
+          <Private>true</Private>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+</Project>

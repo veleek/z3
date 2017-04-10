@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Microsoft.Z3</id>
+        <version>$version$</version>
+        <title>Z3</title>
+        <authors>benran</authors>
+        <owners>Microsoft</owners>
+        <licenseUrl>https://github.com/Z3Prover/z3/blob/master/LICENSE.txt</licenseUrl>
+        <projectUrl>https://github.com/Z3Prover/z3</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>Z3 is a high-performance theorem prover being developed at Microsoft Research.</description>
+        <summary>Z3 is a high-performance theorem prover being developed at Microsoft Research.</summary>
+        <tags>Z3, Theorem Prover, SMT, Constraint Satisfaction</tags>
+    </metadata>
+    <files>
+        <file src="..\x64\external_64\Microsoft.Z3.dll" target="build\lib\x64\Microsoft.Z3.dll" />
+        <file src="..\x64\external_64\Microsoft.Z3.xml" target="build\lib\x64\Microsoft.Z3.xml" />
+        <file src="..\x64\external_64\libz3.dll" target="build\lib\x64\libz3.dll" />
+        <file src="..\x86\Release\Microsoft.Z3.dll" target="build\lib\x86\Microsoft.Z3.dll" />
+        <file src="..\x86\Release\Microsoft.Z3.xml" target="build\lib\x86\Microsoft.Z3.xml" />
+        <file src="..\x86\Release\libz3.dll" target="build\lib\x86\libz3.dll" />
+        <file src="Microsoft.Z3.props" target="build\Microsoft.Z3.props" />
+    </files>
+</package>
